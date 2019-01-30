@@ -1,7 +1,7 @@
-FROM jetbrains/teamcity-minimal-agent:2018.1.1-linux
+FROM jetbrains/teamcity-minimal-agent:2018.2.2-linux
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV GOVERSION 1.10.3
+ENV GOVERSION 1.11.5
 
 RUN apt-get update && apt-get install -qqy vim git wget tar \
 && wget -q https://dl.google.com/go/go${GOVERSION}.linux-amd64.tar.gz \
