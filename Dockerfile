@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -qqy gcc build-essential vim git wget tar 
 && mv go /usr/local \
 && mkdir -p /opt/gopath
 
+COPY go-test-teamcity /usr/local/bin
+
 ENV GOROOT="/usr/local/go"
 ENV GOPATH="/opt/gopath"
 ENV PATH="${GOPATH}/bin:${GOROOT}/bin:${PATH}"
