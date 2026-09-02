@@ -1,4 +1,4 @@
-FROM jetbrains/teamcity-minimal-agent:2024.03-linux
+FROM jetbrains/teamcity-minimal-agent:2026.2-linux
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV GOVERSION 1.12.5
